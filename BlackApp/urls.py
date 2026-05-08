@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     # Главная
     path('', views.index, name='index'),
+    path('about/', views.about, name='about'),
 
     # Регистрация и аутентификация
     path('register/tenant/', views.register_tenant, name='register_tenant'),

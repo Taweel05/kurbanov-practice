@@ -461,3 +461,6 @@ def delete_booking(request, booking_id):
         messages.success(request, 'Бронирование удалено')
     return redirect('profile')
 
+def about(request):
+    return render(request, 'BlackApp/about.html')
+
